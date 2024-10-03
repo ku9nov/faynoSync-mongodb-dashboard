@@ -1,12 +1,7 @@
 import mongoose from 'mongoose';
 
 const ArchsSchema = new mongoose.Schema({
-    arch_id: {
-        type: String,
-        required: true,
-        unique: true,
-
-    },
+    arch_id: String,
     updated_at: {
         type: Date,
         default: Date.now,

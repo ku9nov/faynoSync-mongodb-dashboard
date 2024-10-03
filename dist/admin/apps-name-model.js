@@ -1,11 +1,7 @@
 import mongoose from 'mongoose';
 
 const AppsNamesSchema = new mongoose.Schema({
-    app_name: {
-        type: String,
-        required: true,
-        unique: true,
-    },
+    app_name: String,
 
     updated_at: {
         type: Date,
