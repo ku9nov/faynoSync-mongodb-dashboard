@@ -19,7 +19,7 @@ const ArtifactSchema = new mongoose.Schema({
       type: String,
       required: true,
     },
-  });
+  }, { _id: false });
 
 const ChangelogSchema = new mongoose.Schema({
     version: {
@@ -34,7 +34,7 @@ const ChangelogSchema = new mongoose.Schema({
         type: Date,
         required: true,
     },
-});
+  }, { _id: false });
 
 const AppSchema = new mongoose.Schema({
     app_id: {
